@@ -88,6 +88,11 @@
   .menu-icon {
     display: none;
   }
+
+  .vl {
+    border-left: 10px solid #ffffff;
+    height: 60px;
+  }
   
   @media screen and (max-width: 960px) {
     .NavbarItems {

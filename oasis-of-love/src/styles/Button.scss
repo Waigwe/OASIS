@@ -82,6 +82,18 @@
     border: none;
 }
 
+.pink {
+    background-color: #e8afd6;
+    color: #ffffff;
+    border: none;
+}
+
+.pink:hover {
+    background-color: #ffffff;
+    color: #242424;
+    border: solid #e8afd6;
+}
+
 .primary {
     background-color: #242424;
     color: #ffffff;

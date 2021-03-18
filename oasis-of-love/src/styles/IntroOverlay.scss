@@ -1,0 +1,40 @@
+@import "./breakpoints.scss";
+
+.intro-overlay {
+    .top {
+        height: 90vh;
+        height: calc(var(--vh, 1vh) * 90);
+        position: absolute;
+        width: 100%;
+        z-index: 8;
+        @include media("<=tablet") {
+            height: 140vh;
+            height: calc(var(--vh, 1vh) * 140);
+        }
+        .overlay-top {
+            position: absolute;
+            height: 100%;
+            width: 33.33vw;
+            background: #ffffff;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            @include media("<=tablet") {
+                width: 100vw;
+            }
+            &:nth-child(2) {
+                left: 33.333%;
+                @include media("<=tablet") {
+                    display: none;
+                }
+            }
+            &:nth-child(3) {
+                left: 66.666%;
+                @include media("<=tablet") {
+                    display: none;
+                }
+            }
+
+        }
+    }
+}

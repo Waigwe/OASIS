@@ -2,12 +2,12 @@ import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
 import {MdFingerprint} from 'react-icons/md'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import '../styles/Navbar.css'
+import '../styles/Navbar.scss'
 
 // import routes
 import * as ROUTES from '../constants/routes';
 // import components
-import { Button } from '../components/Button'
+import { Button } from './Button'
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -61,6 +61,7 @@ function Navbar() {
                            <Link to={ROUTES.CONTACT_US}className='nav-links'
                            onClick={closeMobileMenu}>CONTACT US</Link>
                        </li>
+                       <div class="vl"></div>
                        <li className='nav-btn'>
                            {
                                button ? (
